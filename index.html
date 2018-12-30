@@ -25,7 +25,9 @@
     </ul>
     <h2>Colors</h2>
     <div v-for="variant in variants" :key="variant.variantId">
-      <p>{{variant.variantColor}}</p>
+      <p @mouseover="updateProduct(variant.variantImage)">
+        {{variant.variantColor}}
+      </p>
 
     </div>
     <h2>Sizes</h2>

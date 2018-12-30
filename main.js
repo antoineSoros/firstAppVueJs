@@ -11,12 +11,14 @@ var app = new Vue({
     variants: [
         {
             variantId:2234,
-            variantColor:"green"
+            variantColor:"green",
+            variantImage:"./assets/vmSocks-green.jpg"
 
         },
         {
             variantId:2235,
-            variantColor:"blue"
+            variantColor:"blue",
+            variantImage:"./assets/vmSocks-blue.jpg"
         }
     ],
     sizes:["35","36","37","38","39","40","41","42"],
