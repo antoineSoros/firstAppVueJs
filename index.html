@@ -19,9 +19,24 @@
     <p v-if="inStock"> In Stock</p>
 
     <p v-else>Out of Stock</p>
+    <h2>Composition</h2>
     <ul>
       <li v-for="detail in details">{{detail}}</li>
     </ul>
+    <h2>Colors</h2>
+    <div v-for="variant in variants" :key="variant.variantId">
+      <p>{{variant.variantColor}}</p>
+
+    </div>
+    <h2>Sizes</h2>
+    <ul>
+      <li v-for="size in sizes">{{size}}</li>
+    </ul>
+    <button v-on:click="addToCart">Add to Cart</button>
+    <div class="cart">
+      <p>{{cart}}</p>
+    </div>
+
 
 
 

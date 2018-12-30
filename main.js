@@ -7,6 +7,24 @@ var app = new Vue({
     altText:'a pair of socks',
     inStock: true,
     onSale: true,
-    details:["80% cotton","20% polyester","Gender-neutral "]
-}
+    details:["80% cotton","20% polyester","Gender-neutral "],
+    variants: [
+        {
+            variantId:2234,
+            variantColor:"green"
+
+        },
+        {
+            variantId:2235,
+            variantColor:"blue"
+        }
+    ],
+    sizes:["35","36","37","38","39","40","41","42"],
+    cart:0,
+},
+    methods: {
+        addToCart(){
+            this.cart +=1;
+        }
+    }
 });
